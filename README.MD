@@ -473,7 +473,7 @@ Has no type.
 None returns: isDefined == false and isEmpty == true<br>
 Some returns: isDefined == true and isEmpty == false<br> 
 
-### [Parallel Collections](src/main/scala/collections/ParallelCollectionPerformanceTest.scala)
+### [Parallel Collections](src/main/scala/com/scala/cookbook/parallel/collections/ParallelCollectionPerformanceTest.scala)
 
 #### Add the dependency if necessary
 ```
@@ -484,6 +484,14 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" 
 Conceptually, Scala's parallel collections framework parallelizes an operation on a parallel collection<br>
 by recursively “splitting” a given collection, applying an operation on each partition of the collection in parallel,<br>
 and re-“combining” all the results that were completed in parallel.
+
+### Views
+
+The View is a special kind of collection in Scala<br>
+that takes a base collection and executes transformer methods on that collection lazily.<br>
+We can turn every Scala collection into a lazy representation and back via the view method.<br>
+They are suitable to operate huge collections without overwhelming the memory. This is possible because the elements<br>
+are loaded by demand (non-strict, lazily) avoiding loading all the elements in the memory all at once(strict mode).
 
 ### [Try](src/main/scala/com/learning/scala/chapter7/more/collections/Chapter7Content_05_MonadicCollections_Try.scala)
 
