@@ -1,5 +1,5 @@
 package com.learning.scala.chapter10.advancedtyping
-
+/*
 class A
 
 class B extends A
@@ -31,4 +31,4 @@ object Chapter10Content_04_BoundedTypes {
   val attemptBtoA: TesterVariantB[A] = new TesterContraCovariantMethodParameter[B]().testerSomethingB(new B)
 
 }
-
+*/

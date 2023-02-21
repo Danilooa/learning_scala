@@ -4,6 +4,7 @@ import scala.language.postfixOps
 import scala.util.Random
 
 
+
 object Chapter7Content_04_LazyList {
 
   def main(args: Array[String]): Unit = {

@@ -473,6 +473,18 @@ Has no type.
 None returns: isDefined == false and isEmpty == true<br>
 Some returns: isDefined == true and isEmpty == false<br> 
 
+### [Parallel Collections](src/main/scala/collections/ParallelCollectionPerformanceTest.scala)
+
+#### Add the dependency if necessary
+```
+libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4"
+```
+
+#### How they work ?
+Conceptually, Scala's parallel collections framework parallelizes an operation on a parallel collection<br>
+by recursively “splitting” a given collection, applying an operation on each partition of the collection in parallel,<br>
+and re-“combining” all the results that were completed in parallel.
+
 ### [Try](src/main/scala/com/learning/scala/chapter7/more/collections/Chapter7Content_05_MonadicCollections_Try.scala)
 
 #### flatMap
