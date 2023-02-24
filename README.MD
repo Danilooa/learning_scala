@@ -1,9 +1,3 @@
-# TODO
-Ranges<br>
-Seq x List<br>
-sbt<br>
-unapply
-
 # Learning Scala
 
 ## Variable types
@@ -590,6 +584,24 @@ out: Sold a Medium Latte for 4.12 to fred
 
 * In reality, they are 22 classes with arities corresponding to the number that names the class<br>
 * The parameters are generic typed and inferred at compilation time<br>
+
+#### Decomposing with pattern matching
+
+```
+val person = (1, "John")
+val (id, name) = person
+println(s"The name is $name") 
+```
+
+#### Some collection methods are available
+
+```
+val t = (1, 2.2, "yo")
+t.size    // 3
+t.head    // Int = 1
+t.tail    // (Double, String) = (2.2,yo)
+t.drop(1) // (Double, String) = (2.2,yo)
+```
 
 ### Functions
 
